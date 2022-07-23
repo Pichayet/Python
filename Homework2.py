@@ -28,5 +28,5 @@ while N > 0 :
     else:
         print("No you cannot take more less than 1 stick!")
         
-hello
+
 
