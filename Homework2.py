@@ -27,6 +27,5 @@ while N > 0 :
         print("No you cannot take more than 2 sticks!")
     else:
         print("No you cannot take more less than 1 stick!")
-        
-
+    
 
