@@ -5,9 +5,10 @@ Created on Sat Jul 23 10:42:15 2022
 @author: gati6
 """
 
-N = int(input("How many stick (N) in the pile :"))
+name = input("What is your name : ")
+print("Hello",name,",",end="")
+N = int(input("How many stick (N) in the pile : "))
 print("There are",N,"sticks in the pile.")
-name = input("What is your name :")
 round = 1
 import random
 random = random.randint(1,2)
