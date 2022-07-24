@@ -6,7 +6,7 @@ Created on Sat Jul 23 10:42:15 2022
 """
 
 name = input("What is your name : ")
-print("Hello",name,",",end="")
+print("Hello",name,"input more than 1 stick to start the game.")
 N = int(input("How many stick (N) in the pile : "))
 print("There are",N,"sticks in the pile.")
 round = 1
