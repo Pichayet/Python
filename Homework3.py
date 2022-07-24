@@ -13,7 +13,7 @@ round = 1
 import random
 random = random.randint(1,2)
 while N > 0 :                   #N = number of sticks
-    if(round % 2 == 0 ):        #smart computer first
+    if(round % 2 == 0 ):        #smart computer turn
         if(N == 1) :            #smart computer lose
             print("I,smart computer, take the last stick.")
             print(name,"win (I,smart computer,am sad T_T)")
