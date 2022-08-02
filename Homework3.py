@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 23 10:42:15 2022
-
-@author: gati6
-"""
-
 name = input("What is your name : ")
 print("Hello",name,"input more than 1 stick to start the game.")
 N = int(input("How many stick (N) in the pile : "))
@@ -17,6 +10,15 @@ while N > 0 :                   #N = number of sticks
         if(N == 1) :            #smart computer lose
             print("I,smart computer, take the last stick.")
             print(name,"win (I,smart computer,am sad T_T)")
+        elif(2 <= N <= 9):
+            if(N == 3 or N == 6 or N == 9):
+                print("I,smart computer ,take : 2 -----")
+                print("There are ",N-2,"sticks in the pile.")
+                N = N - 2
+            else:
+                print("I,smart computer ,take : 1 -----")
+                print("There are ",N-1,"sticks in the pile.")
+                N = N - 1
         else :                  #smart computer random
             print("I,smart computer ,take : ",random)
             if(N-random == 0):  #smart computer lose
@@ -24,8 +26,9 @@ while N > 0 :                   #N = number of sticks
                 print(name,"win (I,smart computer,am sad T_T)")
             else:               #past next turn
                 print("There are ",N-random,"sticks in the pile.")
+                N = N-random
         round = round + 1 
-        N = N-random
+        
     else:                       #player turn
         print(name,",",end="")
         S = int(input("How many sticks you will take(1-2) :"))
