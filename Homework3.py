@@ -2,7 +2,7 @@ name = input("What is your name : ")
 print("Hello",name,"input more than 1 stick to start the game.")
 N = int(input("How many stick (N) in the pile : "))
 print("There are",N,"sticks in the pile.")
-round = 1
+round = 0
 import random
 random = random.randint(1,2)
 while N > 0 :                   #N = number of sticks
@@ -10,12 +10,12 @@ while N > 0 :                   #N = number of sticks
         if(N == 1) :            #smart computer lose
             print("I,smart computer, take the last stick.")
             print(name,"win (I,smart computer,am sad T_T)")
-        elif(2 <= N <= 9):
-            if(N == 3 or N == 6 or N == 9):
+        elif(2 <= N <= 12):     #smart computer control pick
+            if(N == 3 or N == 6 or N == 9 or N == 12):  #pick 2
                 print("I,smart computer ,take : 2 -----")
                 print("There are ",N-2,"sticks in the pile.")
                 N = N - 2
-            else:
+            else:               #pick 1
                 print("I,smart computer ,take : 1 -----")
                 print("There are ",N-1,"sticks in the pile.")
                 N = N - 1
