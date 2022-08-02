@@ -20,7 +20,7 @@ for i in range(i,T+1):
                     print(name,"win (I,smart computer,am sad T_T)")
                     N = N - 1
                 elif(2 <= N <= 12):
-                    if(N == 3 or N == 6 or N == 9  or N == 12):
+                    if(N == 3 or N == 6 or N == 9 or N == 7 or N == 12):
                         #print("I,smart computer ,take : 2 -----")
                         print("Bot -- There are",N-2,"sticks in the pile.")
                         N = N - 2
