@@ -11,7 +11,7 @@ count_i = len(M)
 count_j = len(M)
 i = 0
 M.sort(reverse=True)
-for i in range(0,count_i):
+for i in range(0,count_i): #ลองเปลี่ยนเป็น len(M)
     for j in range(0,count_j):
         if(j != count_j-1):
             if(M[j]>=100 and M[j+1]<100):           #Case 1 [>=100] with [<=100]
