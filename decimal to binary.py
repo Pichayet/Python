@@ -1,0 +1,7 @@
+A = int(input("Input Decimal number"))
+Binary = bin(A).replace("0b","")
+Octal = oct(A).replace('0o',"")
+Hexa = hex(A).replace('0x',"")
+print("Binary number from ",A," :",Binary)
+print("Octal number from ",A," :",Octal)
+print("Hexadecimal number from ",A," :",Hexa)
