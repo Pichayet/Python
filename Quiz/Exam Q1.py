@@ -1,4 +1,9 @@
-binary = input("Enter the binary string :")
+binary = input('binary string(between 3-20 bits) :')
+Len_binary = len(binary)
+while (3 < Len_binary > 20):                                    
+    print("Pls input binary less than 20 bits")
+    binary = input('binary string :')
+    Len_binary = len(int(binary))
 for i in binary:                                                #ตรวจสอบว่าเป็นจำนวนเต็มหรือป่าว
     if (i == ".") :                                                 #เงื่อนไขแบบมีจุด
         B1,B2 = binary.split(".")
@@ -8,7 +13,6 @@ for i in binary:                                                #ตรวจส
         break
     else :                                                          #เงื่อนไขแบบไม่มีจุด
         total = binary
-        B1 = binary
         total_sort = sorted(total,reverse = True)
         print('Total_sort',total_sort)
 for i in total_sort:                                            #ตรวจสอบว่ามีเลขมากกว่า 1 ไหม
@@ -32,11 +36,16 @@ for i in total_sort:                                            #ตรวจส
                 print('Total_sort',total_sort)
                 i = total_sort[0]
     break
-Length_B1 = len(B1)
-result1 = 0
-for i in total :
-    D = 2**(Length_B1-1)*int(i)
-    Length_B1 = Length_B1 - 1  
-    result1 = result1 + D
 
-print(result1)
+number_5 = '101'
+count = 0
+for i in range(0,Len_binary) :
+    if(int(number_5) == int(binary[i:i+3])):
+        count = count + 1
+    
+print(count)
+
+
+
+
+
